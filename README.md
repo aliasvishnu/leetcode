@@ -1,6 +1,6 @@
 # Leetcode
 
-This is a log of all the problems that I have solved in Leetcode. </br>
+This is a log of all the problems that I have solved in Leetcode along with the hints. Please forgive the low hint quality, if you'd like you are welcome to contribute to the hints as well. </br>
 
 </br><b>First hint list </b>
 </br> ===================
