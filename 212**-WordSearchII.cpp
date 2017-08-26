@@ -1,3 +1,4 @@
+
 struct node{
     char c;
     vector<node *> lst;
@@ -31,28 +32,6 @@ public:
         }
         temp->lst[0] = new node('#');
     }
-
-    /** Returns if the word is in the trie. */
-    bool search(string word) {
-        struct node *temp = root;
-        int len = word.size();
-        for(int i = 0; i < len; i++){
-            if(temp->lst[word[i]-96] == NULL) return false;
-            else temp = temp->lst[word[i]-96];
-        }
-        return temp->lst[0] != NULL;
-    }
-
-    /** Returns if there is any word in the trie that starts with the given prefix. */
-    bool startsWith(string prefix) {
-        struct node *temp = root;
-        int len = prefix.size();
-        for(int i = 0; i < len; i++){
-            if(temp->lst[prefix[i]-96] == NULL) return false;
-            else temp = temp->lst[prefix[i]-96];
-        }
-        return true;
-    }
 };
 
 /**
@@ -78,26 +57,39 @@ public:
         return s;
     }
 
+    // Faster solution that discuss solutions.
     void DFS(vector<vector<char>>& M, struct node *root, int r, int c, string newword){
+
         if(root->lst[0] != NULL){
-            if(root->lst[0]->c == '#'){
-                root->lst[0]->c = '@';
+            if((root->lst[0])->c == '#'){
+                (root->lst[0])->c = '&';
+                answer.push_back(newword);
+            }
+        } // we won't return from here, because if there is both aab and aaba, it will terminate.
+
+        if(M[r][c] == '&' || root->lst[M[r][c]-96] == NULL) return;
+
+        struct node *next = root->lst[M[r][c]-96];
+        newword += M[r][c];
+
+        char bkp = M[r][c];
+        M[r][c] = '&';
+
+        if(insideBounds(r+1, c)) DFS(M, next, r+1, c, newword);
+        if(insideBounds(r, c+1)) DFS(M, next, r, c+1, newword);
+        if(insideBounds(r, c-1)) DFS(M, next, r, c-1, newword);
+        if(insideBounds(r-1, c)) DFS(M, next, r-1, c, newword);
+
+         M[r][c] = bkp;
+
+
+        // this is necessary for the case ["a"], ["a"]
+        if(next->lst[0] != NULL){
+            if((next->lst[0])->c == '#'){
+                (next->lst[0])->c = '@';
                 answer.push_back(newword);
             }
         }
-
-        if(M[r][c] == '#' || root->lst[M[r][c]-96] == NULL) return;
-
-        char bkp = M[r][c];
-        M[r][c] = '#';
-
-
-        if(insideBounds(r+1, c)) DFS(M, root->lst[M[r+1][c]-96], r+1, c, newword+tostring(M[r+1][c]));
-        if(insideBounds(r, c+1)) DFS(M, root->lst[M[r][c+1]-96], r, c+1, newword+tostring(M[r][c+1]));
-        if(insideBounds(r-1, c)) DFS(M, root->lst[M[r-1][c]-96], r-1, c, newword+tostring(M[r-1][c]));
-        if(insideBounds(r, c-1)) DFS(M, root->lst[M[r][c-1]-96], r, c-1, newword+tostring(M[r][c-1]));
-
-        M[r][c] = bkp;
     }
 
 
@@ -110,7 +102,7 @@ public:
         }
 
         rows = board.size();
-        cols = board.size();
+        cols = board[0].size();
 
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols; j++){
