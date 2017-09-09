@@ -26,6 +26,9 @@ public:
         for(int i = 0; i < len; i++){
             if(sorted[i] < target) prev = i;
         }
+
+        // prev is just before the value we will start from
+        // next is just after the value we will end at
         int next = len;
         for(int i = len-1; i >= 0; i--){
             if(sorted[i] > target) next = i;
