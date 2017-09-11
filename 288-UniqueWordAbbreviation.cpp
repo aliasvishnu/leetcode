@@ -1,3 +1,6 @@
+// Time - O(n)
+// Space - O(n)
+// Main idea - UnorderedMap and Set
 class ValidWordAbbr {
 public:
     unordered_map<string, int> mp;
