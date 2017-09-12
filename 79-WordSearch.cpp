@@ -1,3 +1,7 @@
+// Time - O(mn)
+// Space - O(1)
+// Main idea - DFS
+
 class Solution {
 public:
     // vector<vector<bool>> mark;
