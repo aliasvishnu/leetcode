@@ -3,7 +3,7 @@ public:
 //     "/a/a//a/.././/...../a/"
 //     "/a/a/...../a"
 
-    string simplifyPath(string s) {
+    string simplifyPath(string path) {
         string res, tmp;
         vector<string> stk;
         stringstream ss(path); //splits the stringstream into parts of /
