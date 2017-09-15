@@ -1,3 +1,14 @@
+// Time - O(n)
+// Space - O(k)
+
+/*
+First we store all the counts in a heap (name of the process doesn't matter). For n+1 steps, we pick the most occuring process and subtact 1
+from it and put it in an array. Then we add the new values to the heap. We do this until there are more than or equal to n processes in teh
+heap.
+
+Otherwise, we just have (n+1)*count to add to the answer;
+*/
+
 #include <priority_queue>
 class Solution {
 public:
