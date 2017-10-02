@@ -67,6 +67,7 @@ public:
             }
         } // we won't return from here, because if there is both aab and aaba, it will terminate.
 
+        // & means it has been visited in the current chain of search
         if(M[r][c] == '&' || root->lst[M[r][c]-96] == NULL) return;
 
         struct node *next = root->lst[M[r][c]-96];
