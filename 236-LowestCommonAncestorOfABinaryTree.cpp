@@ -26,7 +26,7 @@ public:
         if(!found) num.pop_back();
     }
 
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    TreeNode* lowestCommonAncestor2(TreeNode* root, TreeNode* p, TreeNode* q) {
         TreeNode* answer = NULL;
         find(root, p, num1, found1);
         find(root, q, num2, found2);
@@ -42,5 +42,11 @@ public:
         }
 
         return answer;
+    }
+
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode *q){
+        if(root == p || root == q) return root;
+
+        TreeNode* left = root
     }
 };
