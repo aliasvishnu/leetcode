@@ -26,9 +26,9 @@ public:
             if(s.compare("#") == 0){
                 if(q.empty()) return -1;
                 else{
-                   q.push("#");
-                depth++;
-                continue;
+                    q.push("#");
+                    depth++;
+                    continue;
                 }
             }
 

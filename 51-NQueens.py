@@ -45,6 +45,3 @@ class Solution(object):
         for j in range(0, n):
             self.function(answers, board, 0, j, set(), set(), set(), n)
         return answers
-
-
-        
