@@ -1,10 +1,6 @@
 # Leetcode
 
-Many a time, you end up seeing the Leetcode solutions while looking for hints in the discuss section. I couldn't find any Leetcode hints repo. Here it is now. I'm building hints right now, hints list should grow bigger within a week or two.</br>
-
-I am putting up hints and solutions for about 250 leetcode problems. Please note that these aren't the most optimal solutions, but all were accepted. I apologize if you find the hint quality to be poor. I have separated it into 2 sections, first hints list and second hints list. Not all problems have a second hint.  </br>
-
-If you would like to contribute hints and solutions, please make a PR. I could really use help as I haven't solved all problems. If you need to contact me, sriram@ucsd.edu.
+Hints + solutions for ~250 leetcode problems. Mostly medium, some hard. Currently adding more hints as I revisit my solutions. Please help me add more hints if you can.
 
 I commit a lot, many a times unnecessarily in this repo, it could be better solution or some optimization, or alternate solution, or variable renaming. I apologize for that as well.
 
@@ -21,7 +17,7 @@ I commit a lot, many a times unnecessarily in this repo, it could be better solu
 </br> 27 - vector.erase() will not work, as vector overwrites the element every time erase is called.
 </br> 28 - Brute force
 </br> 31 - There is no scope to increasing the given number from the point where list is decreasing continuously. Find the location closest from the end which has segment ab of the form a < b, and make it ba.
-</br> 33 - Array looks like /|/, increasing, sudden drop and then decreasing. Find out where the middle element is, can it's location help you?
+</br> 33 - Array looks like /|/, increasing, sudden drop and then increasing again. Find out where the middle element is, can it's location help you?
 </br> 36 - Brute force, O(n) solution, but n = 9, so technically it is O(1).
 </br> 42 - Find next greater element index for each index, and prefix sum for each element. Can you build the solution from this? Check out problem 496 for next greater element.
 </br> 108 - Where does the root element fall during an inorder (sorted) traversal?
