@@ -1,10 +1,12 @@
 # Leetcode
 
-Many a time, you end up seeing the Leetcode solutions while looking for hints in the discuss section. I couldn't find any Leetcode hints repo. Here it is now. </br>
+Many a time, you end up seeing the Leetcode solutions while looking for hints in the discuss section. I couldn't find any Leetcode hints repo. Here it is now. I'm building hints right now, hints list should grow bigger within a week or two.</br>
 
 I am putting up hints and solutions for about 250 leetcode problems. Please note that these aren't the most optimal solutions, but all were accepted. I apologize if you find the hint quality to be poor. I have separated it into 2 sections, first hints list and second hints list. Not all problems have a second hint.  </br>
 
 If you would like to contribute hints and solutions, please make a PR. I could really use help as I haven't solved all problems. If you need to contact me, sriram@ucsd.edu.
+
+I commit a lot, many a times unnecessarily in this repo, it could be better solution or some optimization, or alternate solution, or variable renaming. I apologize for that as well.
 
 
 
