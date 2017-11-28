@@ -1,3 +1,8 @@
+
+/*
+Find the location closest from the end which has segment ab of the form a < b, and make it ba.
+Then sort the number from from b onwards.
+*/
 class Solution {
 public:
     void nextPermutation(vector<int>& nums) {

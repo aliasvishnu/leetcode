@@ -69,15 +69,18 @@ public:
             sums[i] = height[i]+sums[i-1];
         }
     }
-
+    //  Start here
     int trap(vector<int>& height) {
         int len = height.size();
         if(len <= 1) return 0;
 
+        // Not sure why I did this, just create a new vector of length len.
         for(int i = 0; i < len; i++){
             next.push_back(0);
         }
 
+        // for every element, find the index st. a[cur] <= a[index]
+        // Check Next greater element problem if you need to.
         findNextElementIndex(height);
 
         prefixSums(height);
