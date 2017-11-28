@@ -1,3 +1,7 @@
+/*
+If less than n open brackets are open, we can add open bracket. But to add a close bracket you need #close < #open.
+*/
+
 class Solution {
 public:
     vector<string> answer;

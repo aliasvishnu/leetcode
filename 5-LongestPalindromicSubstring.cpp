@@ -20,14 +20,12 @@ public:
         }
 
         for(int i = len-1; i >= 0; i--){
-            for(int j = i; j < len; j++){
-                if(i != j && j != i+1 && i != j+1){
-                    dp[i][j] = (s[i] == s[j])? (2+dp[i+1][j-1])*(dp[i+1][j-1]!=0):0; //If dp[i+1][j-1] == 0 then dp[i][j] = 0;
-                    if(dp[i][j] > max){
-                        max = dp[i][j];
-                        start = i;
-                        alen = j-i+1;
-                    }
+            for(int j = i+2; j < len; j++){
+                dp[i][j] = (s[i] == s[j])? (2+dp[i+1][j-1])*(dp[i+1][j-1]!=0):0; //If dp[i+1][j-1] == 0 then dp[i][j] = 0;
+                if(dp[i][j] > max){
+                    max = dp[i][j];
+                    start = i;
+                    alen = j-i+1;
                 }
             }
         }

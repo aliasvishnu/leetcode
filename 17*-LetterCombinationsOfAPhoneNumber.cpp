@@ -23,7 +23,7 @@ public:
                 }
             }
 
-            answer.swap(temp);
+            answer = temp; // answer.swap(temp) works as well.
         }
 
         return answer;
