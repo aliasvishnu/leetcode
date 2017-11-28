@@ -1,6 +1,12 @@
 # Leetcode
 
-This is a log of all the problems that I have solved in Leetcode along with the hints. Please forgive the low hint quality, if you'd like you are welcome to contribute to the hints as well. </br>
+Many a time, you end up seeing the Leetcode solutions while looking for hints in the discuss section. I couldn't find any Leetcode hints repo. Here it is now. </br>
+
+I am putting up hints and solutions for about 250 leetcode problems. Please note that these aren't the most optimal solutions, but all were accepted. I apologize if you find the hint quality to be poor. I have separated it into 2 sections, first hints list and second hints list. Not all problems have a second hint.  </br>
+
+If you would like to contribute hints and solutions, please make a PR. I could really use help as I haven't solved all problems. If you need to contact me, sriram@ucsd.edu.
+
+
 
 </br><b>First hint list </b>
 </br> ===================
