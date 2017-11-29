@@ -7,17 +7,18 @@ I commit a lot, many a times unnecessarily in this repo, it could be better solu
 
 
 </br><b>First hint list </b>
-</br> ===================
-</br> 5 - Build recurrence relation (may help to solve longest common substring problem)
-</br> 15 - Solve 2 sum before attempting this problem.
-</br> 17 - Possible approaches are trie, or more easy - building on smaller solution.
-</br> 22 - If less than n open brackets are open, we can add open bracket. But to add a close bracket you need #close < #open.
-</br> 23 - Use a data structure which can give you minimum element at low cost.
-</br> 26 - Maintain length of unique elements till current element.
-</br> 27 - vector.erase() will not work, as vector overwrites the element every time erase is called.
-</br> 28 - Brute force
-</br> 31 - There is no scope to increasing the given number from the point where list is decreasing continuously. Find the location closest from the end which has segment ab of the form a < b, and make it ba.
-</br> 33 - Array looks like /|/, increasing, sudden drop and then increasing again. Find out where the middle element is, can it's location help you?
+| # | Hints | Complexity |
+|---| ----- | ---------- |
+| 5 | Build recurrence relation (may help to solve longest common substring problem) | |
+| 15| Solve 2 sum before attempting this problem. | |
+| 17| Possible approaches are trie, or more easy - building on smaller solution. | |
+| 22| If less than n open brackets are open, we can add open bracket. But to add a close bracket you need #) < #( | |
+| 23| Use a data structure which can give you minimum element at low cost.| |
+| 26| Maintain length of unique elements till current element.| |
+| 27| vector.erase() will not work, as vector overwrites the element every time erase is called.| |
+| 28| Brute force. | |
+| 31| Find the location closest from the end which has segment ab of the form a < b, and make it ba. | |
+| 33| Array increasing, sudden drop and then increasing again. Find out where the middle element is, can it's location help you? | |
 </br> 36 - Brute force, O(n) solution, but n = 9, so technically it is O(1).
 </br> 42 - Find next greater element index for each index, and prefix sum for each element. Can you build the solution from this? Check out problem 496 for next greater element.
 </br> 108 - Where does the root element fall during an inorder (sorted) traversal?
