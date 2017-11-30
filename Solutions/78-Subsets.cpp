@@ -24,3 +24,23 @@ public:
         return ans;
     }
 };
+
+// PYTHON SOLUTION
+// class Solution(object):
+//     def subsets(self, nums):
+//         """
+//         :type nums: List[int]
+//         :rtype: List[List[int]]
+//         """
+//         if (len(nums) == 0):
+//             return [[]]
+//         else:
+//             ans = self.subsets(nums[1:])
+//             temp = []
+//             for item in ans:
+//                 temp.append(item + [nums[0]])
+//
+//             for item in temp:
+//                 ans.append(item)
+//         return ans
+//

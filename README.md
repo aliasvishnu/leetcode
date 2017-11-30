@@ -53,6 +53,14 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 69 | Binary Search | start = 0, end = x/2, binary search | O(log(n)) |
 | 70 | DP | DP[i] = DP[i-1] + DP[i-2] | O(n)|
 | 71 | BF | Split by '/', use stack to handle '..' | O(n) |
+| 75 | 2 pointer | Start & end indices. See if you can swap em into place. | O(n) |
+| 76 | Array | Extend and contract window. | O(n) |
+| 77 | Backtrack | Backtracking | O(nCk) |
+| 78 | Backtrack | Backtracking Or generate all numbers between 0 & 2^n and use bit properties. | O(2^n) |
+| 79 | DFS | DFS if letter match | O(nm * len(str)) |
+| 80 | BF | Implementation based, maintain count. |  O(n) |
+| 81 | Binary Search, similar to Problem 33. | O(log(n)) |
+| 88 | Array | Merging logic from merge sort | O(n+m) |
 | 108 | Inorder traversal | Where does the root element fall during an inorder (sorted) traversal? | |
 | 128 | DP | DP problem, find recurrence relation. | |
 
