@@ -3,6 +3,8 @@
 Hints for ~250 leetcode problems. Mostly medium, some hard.
 Good practice list for internships/job hunt.
 
+If this helps you, please star the repo (I commit a lot, so I suggest you unwatch this repo).
+
 Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutions" > here </a>
 
 ## Abbreviations
