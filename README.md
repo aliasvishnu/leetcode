@@ -59,9 +59,23 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 78 | Backtrack | Backtracking Or generate all numbers between 0 & 2^n and use bit properties. | O(2^n) |
 | 79 | DFS | DFS if letter match | O(nm * len(str)) |
 | 80 | BF | Implementation based, maintain count. |  O(n) |
-| 81 | Binary Search, similar to Problem 33. | O(log(n)) |
+| 81 | Binary Search |  Similar to Problem 33. | O(log(n)) |
 | 88 | Array | Merging logic from merge sort | O(n+m) |
-| 108 | Inorder traversal | Where does the root element fall during an inorder (sorted) traversal? | |
+| 90 | Array | Build the powerset starting from []. [[], [1]] + [2] -> [[], [1], [2], [1, 2]] + [2] = [[], [1], [2], [1, 2], [2, 2], [1, 2, 2]} | O(2^n) |
+| 91 | DP | DP[i] = number of ways to decode until position i, relate it with DP[i-1] & DP[i-1] | O(n) |
+| 98 | Tree Traversal | Both subtrees must be BST and max(left subtree) < min(right subtree) | O(n) |
+| 101 | Tree Traversal | Assume you're at root, ll - left subtree of left subtree, and so on; Condition is ll = rr & lr = rl & l->val = r->val. | O(n) |
+| 102 | BFS | Straighforward BFS | O(n) |
+| 103 | BFS | BFS + stack at alternate levels. | O(n) |
+| 104 | Tree Traversal | f(i) = 1 + max(f(i->left), f(i->right)) | O(n) |
+| 105 | ||
+| 106 | ||
+| 107 | Tree Traversal | Problem 102 + reverse the result. | O(n) |
+| 108 | Array | Middle element becoems root. | O(n) |
+| 116 | BFS | BFS will give the ordering.  | O(n) |
+| 117 | BFS | Same hint as 116. | O(n) |
+| 118 | BF | Generate new row from old row. | O(n^2) |
+| 119 | BF | Generate new row from old row. | O(n^2) |
 | 128 | DP | DP problem, find recurrence relation. | |
 
 ## Second hint list
