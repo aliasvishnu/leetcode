@@ -3,7 +3,7 @@
 Hints for ~250 leetcode problems. Mostly medium, some hard.
 Good practice list for internships/job hunt.
 
-If this helps you, please star the repo (I commit a lot, so I suggest you unwatch this repo).
+If this helps you, please star the repo (I commit a lot, so I suggest you unwatch the repo).
 
 Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutions" > here </a>
 
@@ -79,6 +79,7 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 118 | BF | Generate new row from old row. | O(n^2) |
 | 119 | BF | Generate new row from old row. | O(n^2) |
 | 128 | DP | DP problem, find recurrence relation. | |
+| 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 
 ## Second hint list
 
