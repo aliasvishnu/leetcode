@@ -79,6 +79,12 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 118 | BF | Generate new row from old row. | O(n^2) |
 | 119 | BF | Generate new row from old row. | O(n^2) |
 | 128 | DP | DP problem, find recurrence relation. | O(n) |
+| 133 | DFS/BF | Copy the original graph in a DFS like manner. | O(E+V) |
+| 137 | Bit manipulation/Array | Consider 1 bit version, only 0's and 1's are allowed. If all numbers except one come 3 times, then there will be either 3k 1's, or 3k 0's followed by the bit of the actual number. So, whenever 1 comes 3 times make it 0. In the end, only the bit in the required number will be existing. Extend this logic to 32 bits. | O(n) |
+| 139 | DP | DP[i] = whether sentence S[1:i] has a valid word break. DP[i] is true if some DP[j] is true and S[j:i] is a word. | O(n^2) |
+| 140 | DP | Same as 139, keep track of all possible solutions at each i. | O(n^2) |
+| 146 | Hashing/Array | Mostly brute force; keep track of which element needs to get evicted next, elements are stored in a hash. | O(1) per operation |
+| 149 | Array | For each point X, check slope with every other point. If 5 points have same slope S then they all fall on the same line where X defines the intercept for slope S. | O(n^2) |
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |
