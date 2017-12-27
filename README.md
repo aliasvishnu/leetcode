@@ -8,7 +8,7 @@ If this helps you, please star the repo (I commit a lot, so I suggest you unwatc
 Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutions" > here </a>
 
 ## Abbreviations
-* BF - Brute Force,
+* BF - Brute Force, many times I use Array and BF interchangeably; just implement the obvious logic.
 * DP - Dynamic Programming
 * Array - Problem specific array logic
 * D&C - Divide & Conquer
@@ -85,6 +85,16 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 140 | DP | Same as 139, keep track of all possible solutions at each i. | O(n^2) |
 | 146 | Hashing/Array | Mostly brute force; keep track of which element needs to get evicted next, elements are stored in a hash. | O(1) per operation |
 | 149 | Array | For each point X, check slope with every other point. If 5 points have same slope S then they all fall on the same line where X defines the intercept for slope S. | O(n^2) |
+| 150 | Stack | Use stack to store operands and whenever operator is seen, evaluate. Use stoi() to convert string to number. | O(n) |
+| 152 | Array | Maintain max and min values while iterating through the array. If A[i] is -ve, then swap max and min, as min is now a candidate to become max (after multiplying). While multiplying with A[i], only multiply if it can increase max or decrease min. If it cannot, then that subarray ends there and must start with A[i]. | O(n) |
+| 161 | BF | When there is mismatch, check if A[i+1:] == B[j:], A[i+1:] == B[j+1:], A[i:] == B[j+1:]. | O(n) |
+| 168 | BF | If n <= 26, then this is easy. Otherwise it is F(n) = F(n/26)+ (char)n%26; something like this. Calculate the exact relation. | O(log(n)) |
+| 169 | Array | Assume A[0] is the majority element i.e. curmax = 0, whenever A[i] != A[curmax], reduce the count, if the count becomes -ve at any point, set curmax = i. Idea is that we are cancelling all non-equal elements, if some element occurs more than half times, then in the end curmax should point to that element. | O(n) |
+| 172 | Math | [n/5] + [n/25] + [n/125] and so on .. where [] is floor operator. | O(log(n))|
+| 173 | Stack | For every element, go right and then left repeatedly to get the next smallest element, can storing it in a stack help? | O(n) |
+| 187 | Hash | Store all 10 letter substrings in a hashtable. | O(n) |
+| 190 | BF | Remember to store answer in unsigned long. Construct answer from bits. | O(log(n)) |
+| 191 | BF | Straighforward. | O(log(n)) |
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |
