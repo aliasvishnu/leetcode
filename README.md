@@ -100,8 +100,10 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 202 | Set | Use a set to keep track of all visited numbers. | Don't know. |
 | 205 | Hash | Make sure you have a 1-1 mapping. | O(n) |
 | 206 | BF | Use variables prevNode, curNode, nextNode. You need to do it this step by step, decide in how to and in what order to set the said variables. | O(n) |
-| 207 | DFS | You're looking for a loop. So set the nodes whom you're visiting in the current loop as gray, and if you end up visiting a gray node then there is a loop. | O(|V|+|E|) |
+| 207 | DFS | You're looking for a loop. So set the nodes whom you're visiting in the current loop as gray, and if you end up visiting a gray node then there is a loop. | O(V+E) |
 | 208 | Tree | Multiway tree. | O(n) for both search and insert, n = # letters |
+| 209 | Array | Expanding and shrinking window approach. | O(n) |
+| 210 | Topological Sorting | Make sure to check for cycles. | O(V+E) |
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |
