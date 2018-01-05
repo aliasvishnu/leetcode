@@ -104,6 +104,9 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 208 | Tree | Multiway tree. | O(n) for both search and insert, n = # letters |
 | 209 | Array | Expanding and shrinking window approach. | O(n) |
 | 210 | Topological Sorting | Make sure to check for cycles. | O(V+E) |
+| 212 | Trie+DFS | Problem is that you never know when a word ends. If no word starts with prefix "ab" and your path in DFS is currently "ab" you can break the current DFS chain. See if a trie can help with this kind of pruning. | O(n^2*m^2) in the absolute worst case, all words use all the letters in the matrix. |
+| 214 | BF/KMP | KMP is faster. But BF works by asking .. what is the largest prefix of the string that is also a palindrome, and thus how many characters are needed to make it into a palindrome. | O(n) |
+| 215 | QuickSort | Don't complete the sort. Partition, and if there are more than k characters in the first half, search for kth largest in the first half, else search for it in the second half (subtract number of elements in the first half). | O(log(n)) on average |
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |
