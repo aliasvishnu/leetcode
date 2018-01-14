@@ -107,6 +107,22 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 212 | Trie+DFS | Problem is that you never know when a word ends. If no word starts with prefix "ab" and your path in DFS is currently "ab" you can break the current DFS chain. See if a trie can help with this kind of pruning. | O(n^2*m^2) in the absolute worst case, all words use all the letters in the matrix. |
 | 214 | BF/KMP | KMP is faster. But BF works by asking .. what is the largest prefix of the string that is also a palindrome, and thus how many characters are needed to make it into a palindrome. | O(n) |
 | 215 | QuickSort | Don't complete the sort. Partition, and if there are more than k characters in the first half, search for kth largest in the first half, else search for it in the second half (subtract number of elements in the first half). | O(log(n)) on average |
+| 217 | HashSet | Check if an element is already in the set, if not add it. | O(n) |
+| 219 | HashMap | Similar to 217. | O(n)|
+| 220 | HashMap | Divide all numbers by t. Then use a hashset to check for nums[i]-1, nums[i] and nums[i+1] | O(n)|
+| 221 | DP | DP[i][j] = length of biggest square ending at i, j. Use DP[i-1][j], DP[i-1][j-1], DP[i][j-1] to get and update expression for DP[i][j]. | O(mn) |
+| 224 | Stack | You need to use 2 stacks. Read internet article on expression evaluation. | O(n) |
+| 227 | Stack | Similar to 224, but you need to use preference order. | O(n) |
+| 228 | BF | Single pass through the numbers, you should be able to get the first and the last elements of the ranges. Check what happens if there is only one element.  | O(n) |
+| 230 | Inorder Traversal | Find the kth largest element during traversal. | O(n) |
+| 231 | Bit manipulation | Only one bit must be set. | O(1) |
+| 234 | List Reversal | Reverse first half of linked list and then go outwards from the centre. | O(n) |
+| 235 | BF | Current node should be larger than one element but smaller than one element. Find this node. | O(h) |
+| 236 | BF | Find the path to each node, then compare the paths. | O(n) |
+| 238 | Array | Compute prefix product array and suffix product array. | O(n) |
+| 239 | Array/Stack | Solve Next greater element problem. Until nge index is outside the window, current maximum will repeat. | O(n) | 
+| 240 | Array | Start from the top right corner, if larger than target, go left, else go down. | O(m+n) |
+| 246 |
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |
