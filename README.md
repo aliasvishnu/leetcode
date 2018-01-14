@@ -120,9 +120,15 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 235 | BF | Current node should be larger than one element but smaller than one element. Find this node. | O(h) |
 | 236 | BF | Find the path to each node, then compare the paths. | O(n) |
 | 238 | Array | Compute prefix product array and suffix product array. | O(n) |
-| 239 | Array/Stack | Solve Next greater element problem. Until nge index is outside the window, current maximum will repeat. | O(n) | 
+| 239 | Array/Stack | Solve Next greater element problem. Until nge index is outside the window, current maximum will repeat. | O(n) |
 | 240 | Array | Start from the top right corner, if larger than target, go left, else go down. | O(m+n) |
-| 246 |
+| 246 | Array | Find out the mapping, 1-1, 6-9 and so on. Algo is similar to checking palindrome, instead check for this mapping. | O(n) |
+| 247 | Recursion | Can expand $ as it as "1$1", "0$0", "6$9", "8$8" and so on. | O(5^n) |
+| 248 | Recursion | Similar to 247, just check if it is in range and add it to the list. | O(5^n) |
+| 249 | Hashing | For each string S, convert it into a Key K by using a concept of offsets. | O(n), string processing is assumed to be O(1) |
+| 251 | BF | Keep track of which vector and position you are at. | O(n), n = # total number of elements |  
+| 252 | Sorting | Sort by start or end time, and check if a previous interval interrupts the next one. | O(n log(n)) |
+| 253 | Greedy | Basically interval scheduling problem.  | O(n log(n)) |
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |

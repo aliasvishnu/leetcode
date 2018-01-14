@@ -24,10 +24,11 @@ public:
 
         int n = high.size(), answer = 0;
 
-
+        // Base cases
         for(string s : last){
             if(between(low, high, s)) answer++;
         }
+
          vector<string> temp;
 
         for(int r = 1; r <= n; r += 1){
@@ -43,17 +44,10 @@ public:
 
             secondlast = last;
             last = temp;
-            
-            int l = temp.size();
-            for(int j = 0; j < l; j++){
 
-                string s = temp[j];
-                // cout << s << endl;
-                if(between(low, high, s) && s[0] != '0'){
-                    // cout << s << endl;
+            for(string s: temp)
+                if(between(low, high, s) && s[0] != '0')
                     answer++;
-                }
-            }
 
         }
 
