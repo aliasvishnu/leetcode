@@ -15,7 +15,6 @@ public:
             if(node != parent && DFS(node, i) == false) ans = false;
         }
 
-        visit[0] = false;
         return ans;
     }
 

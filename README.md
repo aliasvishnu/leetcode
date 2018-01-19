@@ -128,7 +128,13 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 249 | Hashing | For each string S, convert it into a Key K by using a concept of offsets. | O(n), string processing is assumed to be O(1) |
 | 251 | BF | Keep track of which vector and position you are at. | O(n), n = # total number of elements |  
 | 252 | Sorting | Sort by start or end time, and check if a previous interval interrupts the next one. | O(n log(n)) |
-| 253 | Greedy | Basically interval scheduling problem.  | O(n log(n)) |
+| 253 | Greedy/Heap | Basically interval scheduling problem.  | O(n log(n)) |
+| 257 | Inorder traversal | Maintain a path string and add to solution when you hit null. | O(n) |
+| 259 | Sorting/2Sum | Sort and do 2 sum like algo. They asked for index triplets, so duplicates aren't an issue. | O(n^2) |
+| 261 | DFS | If any chain of exploration hits an already visited node, return false. | O(n) |
+| 263 | BF | Divide by 2, 3, 5. You should have 1 in the end. | O(log(n)) in terms of bits. |
+| 264 | BF | There are 3 sequences 2x1, 2x2, 2x3....; 3x1, 3x2, 3x3, ...; 5x1, 5x2, 5x3 ...; Keep 3 pointers, at each step, each of these pointers will give the next candidate. The minimum candidate is the next ugly number. | O(n) |
+|
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |
