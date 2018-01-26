@@ -134,7 +134,12 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 261 | DFS | If any chain of exploration hits an already visited node, return false. | O(n) |
 | 263 | BF | Divide by 2, 3, 5. You should have 1 in the end. | O(log(n)) in terms of bits. |
 | 264 | BF | There are 3 sequences 2x1, 2x2, 2x3....; 3x1, 3x2, 3x3, ...; 5x1, 5x2, 5x3 ...; Keep 3 pointers, at each step, each of these pointers will give the next candidate. The minimum candidate is the next ugly number. | O(n) |
-|
+| 265 | BF/Greedy | M[i][j] = cost of painting first i house and i is painted in color j. Fill it it in a bottom up fashion.  | O(n^2) |
+| 266 | BF | Keep count of letters. | O(n) |
+| 269 | Topological Sort | Construct the mapping using the dictionary, then do topological sorting. | O(n*max(word_length)) |
+| 270 | BST | Root to leaf search. | O(log(n)) |
+| 271 | Array | Use string length to keep track. | O(n), n=total number of characters |
+| 272 | 
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |

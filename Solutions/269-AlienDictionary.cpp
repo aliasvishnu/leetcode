@@ -21,7 +21,7 @@ public:
     }
 
     void createGraph(vector<string> words){
-        vector<char> fl;
+        vector<char> fl; // firstLetter
         unordered_map<char, vector<string>> mp;
 
         for(string word: words){
