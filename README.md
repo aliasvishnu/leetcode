@@ -55,6 +55,7 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 69 | Binary Search | start = 0, end = x/2, binary search | O(log(n)) |
 | 70 | DP | DP[i] = DP[i-1] + DP[i-2] | O(n)|
 | 71 | BF | Split by '/', use stack to handle '..' | O(n) |
+| 72 | DP | 2D DP, DP[i][j] = minimum steps for string1 till i to match with string2 until j. Also note that adding a character in one string is the same as removing it in another.| O(n^2) |
 | 75 | 2 pointer | Start & end indices. See if you can swap em into place. | O(n) |
 | 76 | Array | Extend and contract window. | O(n) |
 | 77 | Backtrack | Backtracking | O(nCk) |
@@ -145,7 +146,7 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 275 | Array | Same algo as above. | O(n) |
 | 277 | Array | Consider P1, P2. If P1 knows P2, P1 can't be the answer and vice versa. If both know each other or both don't know each other, both can't be the answer. Extend this idea. | O(n) |
 | 278 | Binary Search | BF | o(log(n)) |
-| 279 | DP | F(n) = 1 + min{i = 1..sqrt(N)} (F(n-i*i)) | O(n sqrt(n)) | 
+| 279 | DP | F(n) = 1 + min{i = 1..sqrt(N)} (F(n-i*i)) | O(n sqrt(n)) |
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |
