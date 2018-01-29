@@ -139,7 +139,13 @@ Solutions <a href = "https://github.com/aliasvishnu/leetcode/tree/master/Solutio
 | 269 | Topological Sort | Construct the mapping using the dictionary, then do topological sorting. | O(n*max(word_length)) |
 | 270 | BST | Root to leaf search. | O(log(n)) |
 | 271 | Array | Use string length to keep track. | O(n), n=total number of characters |
-| 272 | 
+| 272 | Tree traversal | Given a sorted order, can you extract the k numbers in O(n)? Inorder traversal gives sorted order in O(n). To extract the k numbers, find 2 numbers - the smallest number larger than target (right index), and the largest number smaller than target (left index). Extend left and right indices until you have k numbers. | O(n) |
+| 273 | BF | Write a routine that deals with the lowest 3 positions of the number, you can use this to create a billion b million c thousand d. | O(log(n)) |
+| 274 | Sorting | Check for conditions from highest citation to lowest citation in sorter order. | O(n) |
+| 275 | Array | Same algo as above. | O(n) |
+| 277 | Array | Consider P1, P2. If P1 knows P2, P1 can't be the answer and vice versa. If both know each other or both don't know each other, both can't be the answer. Extend this idea. | O(n) |
+| 278 | Binary Search | BF | o(log(n)) |
+| 279 | DP | F(n) = 1 + min{i = 1..sqrt(N)} (F(n-i*i)) | O(n sqrt(n)) | 
 | 413 | Array | [1, 2, 3, 4, 5, 7, 9, 11]. can be written as [5, 3] i.e. 5 sequence of difference 1 and 3 sequence of difference 2, you need to figure out how many parts you can split 5 and 3 into. | O(n) |
 | 694 | DFS | Keep track of the directions in which DFS proceeds in some form, maybe a string like ddr for down down right. | O(rows*cols) |
 | 738 | Array | Find the first time Xi > Xi+1, Xi -= 1 and turn all Xi+k = 9, For eg, 321 becomes 299. Figure out cases like 33332. | O(n) |
